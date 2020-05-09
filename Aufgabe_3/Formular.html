@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Haushaltshilfe</title>
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+	<script src="type.js"></script>
+
+</head>
+
+<body>
+	<header>
+		<h1>Haushaltshilfe</h1>
+		<p>Bitte wählen Sie die Art der Tätigkeiten und überprüfen Ihre Bestellung rechts.</p>
+	</header>
+
+	<form>
+		<div id="form">
+			<h2>AUSWAHL.</h2>
+			<fieldset>
+				<legend>Einkäufe</legend>
+				<input type="checkbox" name="Butter" id="Butter" value="Butter" price="20">
+				<label for="Butter">Butter</label>
+				<select name="Butter" class="Butter">
+					<option value="1" price="20">1 Pck.</option>
+					<option value="2" price="40">2 Pck.</option>
+					<option value="3" price="60">3 Pck.</option>
+				</select>
+				<br>
+				<input type="checkbox" name="Milch" id="Milch" value="Milch" price="69">
+				<label for="Milch">Milch</label>
+				<select name="Milch" class="Milch">
+					<option value="1" price="69">1 Pck.</option>
+					<option value="2" price="138">2 Pck.</option>
+					<option value="3" price="207">3 Pck.</option>
+				</select>
+				<br>
+				<input type="checkbox" name="Eier" id="Eier" value="Eier" price="31">
+				<label for="Eier">Eier</label>
+				<select name="Eier" class="Eier">
+					<option value="1" price="31">1 Pck.</option>
+					<option value="2" price="62">2 Pck.</option>
+					<option value="3" price="93">3 Pck.</option>
+				</select>
+				<br>
+				<input type="checkbox" name="Gemüse" id="Gemüse" value="Gemüse" price="7">
+				<label for="Gemüse">Gemüse</label>
+				<select name="Gemüse" class="Gemüse">
+					<option value="1" price="7">100g  </option>
+					<option value="2" price="62">250g  </option>
+					<option value="3" price="93">500g  </option>
+				</select>
+				<br>
+				<input type="checkbox" name="Fleisch" id="Fleisch" value="Fleisch" price="312">
+				<label for="Fleisch">Fleisch</label>
+				<select name="Fleisch" class="Fleisch">
+					<option value="1" price="312">100g  </option>
+					<option value="2" price="624">250g  </option>
+					<option value="3" price="936">500g  </option>
+				</select>
+				<br>
+				<p>Sonstige:</p>
+				<input type="text" name="Text" placeholder="Artikel" required />
+				<select name="Sonstige" class="Sonstige">
+					<option value="1" price="312">+1 Stk.</option>
+					<option value="2" price="624">+100g</option>
+					<option value="3" price="936">+1 Pck.</option>
+				</select>
+
+			</fieldset>
+
+			<fieldset>
+				<legend>Filiale</legend>
+				<select name="Laden" id="Laden">
+					<option value="Aldi" price="25">Aldi</option>
+					<option value="Edeka" price="30">Edeka</option>
+					<option value="Lidl" price="21">Lidl</option>
+					<option value="Rewe" price="21">Rewe</option>
+				</select>
+			</fieldset>
+
+			<fieldset>
+				<legend>Hausarbeiten</legend>
+				<input type="checkbox" name="Extra" id="Putzen" value="Putzen" price="6">
+				<label for="Putzen">Putzen</label>
+				<br>
+				<input type="checkbox" name="Extra" id="Kochen" value="Kochen" price="8">
+				<label for="Kochen">Kochen</label>
+				<br>
+				<input type="checkbox" name="Extra" id="Wäsche" value="Wäsche" price="7">
+				<label for="Wäsche">Wäsche</label>
+				<br>
+				<input type="checkbox" name="Extra" id="Gartenarbeit" value="Gartenarbeit" price="12">
+				<label for="Gartenarbeit">Gartenarbeit</label>
+			</fieldset>
+			
+			<fieldset>
+				<legend>Uhrzeit</legend>
+				<span id="slider">
+					<span>
+						7 Uhr
+						<input type="range" name="Amount" id="amount" min="0.1" max="1.0" step="0.1" value="0.1">
+						18 Uhr
+			</fieldset>
+		</div>
+	</form>
+	
+	<div>
+		<h2>Bestellung:</h2>
+		<div id="order">
+			...
+		</div>
+	</div>
+
+	<div id="Zahlung">
+		<legend>Zahlungsart</legend>
+		<input type="radio" name="Container" id="Bar"/>
+		<label for="Bar">Bar</label>
+		<br>
+		<input type="radio" name="Container" id="Bankeinzug"/>
+		<label for="Bankeinzug">Bankeinzug</label>
+		<br>
+		<input type="radio" name="Container" id="Überweisung"/>
+		<label for="Überweisung">Überweisung</label>
+		</fieldset>
+	</div>
+</div>
+
+</body>
+
+</html>
