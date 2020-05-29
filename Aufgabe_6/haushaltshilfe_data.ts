@@ -27,7 +27,7 @@ namespace L05_Clien {
     let response: Response;
     let offer: string;
     let data: Data;
-    let url: string = "http://localhost:5001";
+    let url: string = "https://ayran3000.herokuapp.com";
 
     async function handleLoad(): Promise<void> {
 
