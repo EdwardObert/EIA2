@@ -1,0 +1,20 @@
+{
+  "name": "eia",
+  "version": "1.0.0",
+  "description": "endabgabe",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EdwardObert/EIA2.git"
+  },
+  "author": "edward",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EdwardObert/EIA2/issues"
+  },
+  "homepage": "https://github.com/EdwardObert/EIA2#readme"
+}
