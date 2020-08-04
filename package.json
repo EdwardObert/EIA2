@@ -1,0 +1,23 @@
+{
+  "name": "code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "mongodb": "^3.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node /Endabgabe/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EdwardObert/EIA2.git"
+  },
+  "author": "EdwardObert",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EdwardObert/EIA2/issues"
+  },
+  "homepage": "https://github.com/EdwardObert/EIA2#readme"
+}
