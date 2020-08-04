@@ -11,9 +11,9 @@ export namespace Picture {
 
     let port: number | string | undefined  = process.env.PORT;
     if (port == undefined)
-        port = 5002;
+        port = 5995;
 
-    let databaseUrl: string = "mongodb+srv://Testuser:halloichhabekeinelustmehr@eia2-e3syb.mongodb.net/<dbname>?retryWrites=true&w=majority";
+    let databaseUrl: string = "mongodb+srv://YufkaSpezial:Nike123@magiccanvas.hrzta.mongodb.net/<dbname>?retryWrites=true&w=majority";
 
     //let destination: string = "";
 
@@ -36,7 +36,7 @@ export namespace Picture {
         let options: Mongo.MongoClientOptions = {useNewUrlParser: true, useUnifiedTopology: true};
         let mongoClient: Mongo.MongoClient = new Mongo.MongoClient(_url, options);
         await mongoClient.connect();
-        pictures = mongoClient.db("PaintItYourSelf").collection("Pictures");
+        pictures = mongoClient.db("MagicCanvas").collection("Picture");
         console.log("Database connetion", pictures != undefined);
     }
 
@@ -51,6 +51,7 @@ export namespace Picture {
             if (_request.url.indexOf("factor") != -1) {
                 _response.write("Pictured saved. Thank you for painting.");
                 storeOrder(url.query);
+                console.log(url.query);
             }
 
             if (_request.url.indexOf("get") != -1) {

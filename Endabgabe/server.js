@@ -9,8 +9,8 @@ var Picture;
     let allPictures = [];
     let port = process.env.PORT;
     if (port == undefined)
-        port = 5002;
-    let databaseUrl = "mongodb+srv://Testuser:halloichhabekeinelustmehr@eia2-e3syb.mongodb.net/<dbname>?retryWrites=true&w=majority";
+        port = 5995;
+    let databaseUrl = "mongodb+srv://YufkaSpezial:Nike123@magiccanvas.hrzta.mongodb.net/<dbname>?retryWrites=true&w=majority";
     //let destination: string = "";
     startServer(port /*destination*/);
     connectToDatabase(databaseUrl);
@@ -27,7 +27,7 @@ var Picture;
         let options = { useNewUrlParser: true, useUnifiedTopology: true };
         let mongoClient = new Mongo.MongoClient(_url, options);
         await mongoClient.connect();
-        pictures = mongoClient.db("PaintItYourSelf").collection("Pictures");
+        pictures = mongoClient.db("MagicCanvas").collection("Picture");
         console.log("Database connetion", pictures != undefined);
     }
     async function handleRequest(_request, _response) {
@@ -39,6 +39,7 @@ var Picture;
             if (_request.url.indexOf("factor") != -1) {
                 _response.write("Pictured saved. Thank you for painting.");
                 storeOrder(url.query);
+                console.log(url.query);
             }
             if (_request.url.indexOf("get") != -1) {
                 let cursor = await pictures.find();

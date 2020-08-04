@@ -1,17 +1,20 @@
 {
-  "name": "eia",
+  "name": "code",
   "version": "1.0.0",
-  "description": "endabgabe",
+  "description": "",
   "main": "main.js",
+  "dependencies": {
+    "mongodb": "^3.6.0"
+  },
+  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node /Endabgabe/server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/EdwardObert/EIA2.git"
   },
-  "author": "edward",
+  "author": "EdwardObert",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/EdwardObert/EIA2/issues"
